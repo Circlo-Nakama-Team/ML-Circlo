@@ -1,5 +1,5 @@
-runtime: python39  # Specify the Python version you are using
-
+runtime: python311
+instance_class: F2
 entrypoint: uvicorn app:app --host 0.0.0.0 --port 8080
 
 handlers:

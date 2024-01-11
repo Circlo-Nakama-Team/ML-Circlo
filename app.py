@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from io import BytesIO
 import json
+from fastapi.responses import JSONResponse
+
 app = FastAPI()
 
 # LOAD MODEL
@@ -90,12 +92,6 @@ async def predict_api(file: UploadFile = File(...)):
         "detections": output
     }
 
-@app.route("/")
-def index():
-    return jsonify({
-        "status": {
-            "code": 200,
-            "message": "Success",
-        },
-        "data": None
-    }), 200
+@app.get("/")
+async def index():
+    return "Hello, Welcome to Circlo Scan"

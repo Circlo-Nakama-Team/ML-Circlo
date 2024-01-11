@@ -1,0 +1,5 @@
+fastapi[all]
+opencv-python-headless
+matplotlib==3.8.2
+tensorflow
+Pillow
