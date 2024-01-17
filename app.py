@@ -7,12 +7,10 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from io import BytesIO
 import json
-from fastapi.responses import JSONResponse
-
 app = FastAPI()
 
 # LOAD MODEL
-interpreter = Interpreter(model_path="detect.tflite")
+interpreter = Interpreter(model_path="detect_updated_16-1-2024.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
@@ -91,7 +89,7 @@ async def predict_api(file: UploadFile = File(...)):
     return {
         "detections": output
     }
-
+    
 @app.get("/")
 async def index():
     return "Hello, Welcome to Circlo Scan"
