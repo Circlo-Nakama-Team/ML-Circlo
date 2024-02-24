@@ -1,7 +1,7 @@
-# ML-Hackfest
+# ML-GSC
 ---------------------
 ## Overview
-The ML-Hackfest repository focuses on addressing the feature requirements of the Cyclonify (scan) feature in the Circlo app. To achieve this, we harness the power of the TensorFlow Object Detection API to construct a machine learning model tailored to our specific needs, you can see the documentation of TensorFlow Object Detection API through this link [**TensorFlow Object Detection API**](https://github.com/tensorflow/models/blob/master/research/object_detection/README.md). Our model of choice is the SSD MobileNetV2 320x320 FPNLite, renowned for its efficient computational capabilities coupled with high accuracy.
+The ML-GSC repository focuses on addressing the feature requirements of the Cyclonify (scan) feature in the Circlo app. To achieve this, we harness the power of the TensorFlow Object Detection API to construct a machine learning model tailored to our specific needs, you can see the documentation of TensorFlow Object Detection API through this link [**TensorFlow Object Detection API**](https://github.com/tensorflow/models/blob/master/research/object_detection/README.md). Our model of choice is the SSD MobileNetV2 320x320 FPNLite, renowned for its efficient computational capabilities coupled with high accuracy.
 
  ## Architecture
 ![architecture](https://raw.githubusercontent.com/aldebarankwsuperrr/struktur_data/main/mobilenet.jpg)
