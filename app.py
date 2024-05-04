@@ -10,7 +10,7 @@ import json
 app = FastAPI()
 
 # LOAD MODEL
-interpreter = Interpreter(model_path="detect_updated_16-1-2024.tflite")
+interpreter = Interpreter(model_path="detect_29_4_2024.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
