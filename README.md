@@ -22,5 +22,11 @@ The ML-GSC repository focuses on addressing the feature requirements of the Cycl
 4. **320x320 Input Size:**
    - **Input resolution:** The model is optimized for processing images with a resolution of 320x320 pixels. The choice of input size considers the need for real-time or near-real-time processing, striking a balance between accuracy and computational efficiency.
 
+## Most Difficult Challenge
+- Data quality is paramount for developing object detection models with high accuracy. High-quality data accurately represents the conditions the model will encounter during production. Previously, we only used image data from search engines, resulting in suboptimal model accuracy. Therefore, we decided to supplement the data by directly photographing litter found on the streets, at home, and elsewhere. However, the required quantity was limited.
+
+## Ultimate Solution
+- Attended events like national team matches to gather more data. It was disheartening to see the amount of litter scattered around the event, but we utilized the opportunity to collect data by photographing each piece of trash. We also asked our acquaintances to photograph their litter that matched our seven labels. By doing so, we were able to improve the model to the point where its loss was only 17%.
+  
 ## Source
 - https://vidishmehta204.medium.com/object-detection-using-ssd-mobilenet-v2-7ff3543d738d
